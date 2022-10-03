@@ -1,0 +1,153 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+.wrapp{
+    min-width: 300px;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 80%;
+}
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    color: rgb(17, 17, 17);
+    font-family: 'Roboto Slab', serif;
+    font-size: 36px;
+    font-weight: 300;
+    line-height: 43px;
+    text-align: center;
+    margin-top: 60px;
+    max-width: 830px;
+}
+p{
+    color: rgb(17, 17, 17);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    margin-top: 20px;
+    text-align: center;
+    padding: 10px;
+}
+.img{
+    width: 100%;
+    background-repeat: none;
+    background-position: center center;
+    background-size: cover;
+}
+.one{
+    background-image: url('../IMG/1.jpeg');
+    aspect-ratio: 0.84;
+}
+.two{
+    background-image: url('../IMG/2.jpeg');
+    aspect-ratio: 0.84;
+}
+.three{
+    background-image: url('../IMG/3.jpeg');
+    background-position: center bottom;
+    aspect-ratio: 1.32;
+}
+.four{
+    background-image: url('../IMG/4.jpeg');
+    background-position: 25% 75%;
+    aspect-ratio: 1.31;
+}
+.five{
+    background-image: url('../IMG/5.jpeg');
+    background-position: center bottom;
+    aspect-ratio: 1.31;
+}
+.six{
+    background-image: url('../IMG/6.jpeg');
+    aspect-ratio: 0.84;
+}
+.seven{
+    background-image: url('../IMG/7.jpeg');
+    aspect-ratio: 0.84;
+}
+.button p a{
+    padding: 12px 33px;
+    text-decoration: none;
+    background-color: rgb(90, 188, 191);
+    color: white;
+    letter-spacing: 1px;
+}
+.button p a:hover{
+    background-color: rgba(90, 188, 191, 0.859);
+}
+footer{
+    background-color: rgb(51, 51, 51);
+}
+footer a{
+    color: rgb(248, 221, 17);
+}
+footer p{
+    color: white;
+    padding: 30px 0;
+}
+.img{
+    margin-top: 32px;
+}
+@media only screen and (min-width: 768px) {
+    .img-container-wrap{
+        display: flex;
+        flex-wrap: wrap;
+        /* flex-direction: column; */
+        align-items: flex-start;
+        gap: 32px;
+    }
+    .first{
+        width: calc(50% - 16px)
+        
+    }
+    .second{
+        width: calc(50% - 16px);
+        
+    }
+    .third{
+        width: 100%;
+    }
+    .six{
+        margin-top: 0;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .img-container-wrap{
+        
+        gap: 32px;
+    }
+    .first{
+        width: calc(33.33% - 16px);
+        /* aspect-ratio: 1.1; */
+    }
+    .second{
+        width: calc(33.33% - 32px);
+        /* aspect-ratio: 1.1; */
+    }
+    .third{
+        width: calc(33.33% - 16px);
+        /* aspect-ratio: 1.1;
+        */
+    }
+    .six{
+        margin-top: 32px;
+    }
+    .three{
+        aspect-ratio: 1.25;
+    }
+    .four{
+        aspect-ratio: 1.25;
+        
+    }
+    .five{
+        aspect-ratio: 1.25;
+
+    }
+
+}
